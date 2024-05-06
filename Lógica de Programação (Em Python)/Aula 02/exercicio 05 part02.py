@@ -6,5 +6,3 @@ if tipo == "G" or "g":
     print(f"O valor a ser pago é", G,"reais")
 else:
     print(f"O Valor a ser pago é", E,"reais")
-
-"""feito por mim"""
