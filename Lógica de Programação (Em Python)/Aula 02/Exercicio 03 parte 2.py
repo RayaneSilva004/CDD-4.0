@@ -9,5 +9,3 @@ else:
         print("Aluno Reprovado")
     else:
         print("Aluno em Recuperação")
-
-"""feito por mim"""
