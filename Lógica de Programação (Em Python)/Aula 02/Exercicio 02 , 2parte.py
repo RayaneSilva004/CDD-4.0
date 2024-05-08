@@ -8,5 +8,3 @@ else:
         print("números iguais")
     else:
         print(n1,n2)
-
-"""feito por mim"""
