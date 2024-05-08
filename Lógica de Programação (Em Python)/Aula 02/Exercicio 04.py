@@ -9,5 +9,3 @@ else:
         print(time1, "Ganhou o jogo!")
     else:
         print(time2, "Ganhou o jogo!")
-
-"""feito por mim"""
