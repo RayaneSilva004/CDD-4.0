@@ -25,4 +25,4 @@ while resp != 3:
                 cont = cont +1
         if cont == 5:
             print("Usuário incorreto")
-print("Obrigado por usar nossos sserviços, até a próxima!")
+print("Obrigado por usar nossos serviços, até a próxima!")
