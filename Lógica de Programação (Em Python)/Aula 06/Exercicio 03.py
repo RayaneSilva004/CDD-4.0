@@ -1,10 +1,3 @@
-"""n= int(input("Digite um número: "))
-if n==0:
-    print(f"Número Invalido, Número digitado foi {n}")
-elif n%2==0:
-    print("Número positivo")
-else:
-    print("Número negativo")"""
 resp = "S"
 while resp == "S":
     n = int(input("Digite um número: "))
