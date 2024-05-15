@@ -25,3 +25,5 @@ class Pessoa():
     def paradefalar(self):
         print(f"{self.nome} parou de falar")
         self.falando = False
+
+#fazer com que não faça mais de uma ação de um vez, falar expecificamente oq ele está fazendo para não realizar a nova ação
