@@ -7,23 +7,56 @@ class Pessoa():
         self.dormindo = dormindo
         self.falando = falando
 
-    def comer(self, alimento):
-        print(f"{self.nome} foi comer {alimento}")
+  def comer(self, alimento):
+      if self.dormindo:
+        print(f"{self.nome} não pode comer enquanto está dormindo.")
+      elif self.falando:
+        print(f"{self.nome} não pode comer enquanto está falando.")
+      elif self.comendo:
+        print(f"{self.nome} já está comendo.")
+      else:    
+        print(f"{self.nome} foi comer {alimento}")    
         self.comendo= True
-    def paradecomer(self):
-        print(f"{self.nome} parou de comer ")
-        self.comendo= False
-    def dormir(self):
-        print(f"{self.nome} está dormindo")
-        self.dormindo = True
-    def parardedormir(self):
-        print(f"{self.nome} acordou")
-        self.dormindo = False
-    def falar(self):
-        print(f"{self.nome} está falando")
-        self.falando= True
-    def paradefalar(self):
-        print(f"{self.nome} parou de falar")
-        self.falando = False
 
-#fazer com que não faça mais de uma ação de um vez, falar expecificamente oq ele está fazendo para não realizar a nova ação
+    def pararDeComer(self):
+      if not self.comendo:
+        print(f"{self.nome} não está comendo.")
+      else:
+        print(f"{self.nome} parou de comer.")
+        self.comendo = False 
+
+    def dormir(self):
+        if self.comendo:
+          print(f"{self.nome} não pode dormir enquanto está comendo.")
+        elif self.falando:
+          print(f"{self.nome} não pode dormir enquanto está falando.")
+        elif self.dormindo:
+          print(f"{self.nome} já está dormindo.")
+        else:
+          print(f"{self.nome} está dormindo")
+          self.dormindo = True
+
+    def parardedormir(self):
+        if not self.dormindo:
+          print(f"{self.nome} não está dormindo")
+        else:
+          print(f"{self.nome} acordou")
+          self.dormindo = False
+
+    def falar(self):
+        if self.comendo:
+          print(f"{self.nome} não pode falar enquanto está comendo.")
+        elif self.dormindo:
+          print(f"{self.nome} não pode falar, enquanto está dormindo.")
+        elif self.falando:
+          print(f"{self.nome} já está falando.")
+        else:
+          print(f"{self.nome} está falando")
+          self.falando= True
+
+    def paradefalar(self):
+        if not self.falando:
+          print(f"{self,nome} não está falando")
+        else:
+          print(f"{self.nome} parou de falar")
+          self.falando = False
