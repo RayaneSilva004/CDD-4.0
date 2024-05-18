@@ -13,7 +13,7 @@ class Pessoa():
         elif self.falando:
           print(f"{self.nome} não pode comer enquanto está falando.")
         elif self.comendo:
-          print(f"{self.nome} já está comendo.")
+          print(f"{self.nome} não pode comer {alimento},{self.nome} já está comendo.")
         else:    
           print(f"{self.nome} foi comer {alimento}")    
           self.comendo= True
