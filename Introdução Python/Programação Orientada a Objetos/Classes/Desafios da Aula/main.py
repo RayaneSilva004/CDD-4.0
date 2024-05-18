@@ -1,4 +1,8 @@
-from Classes import *
-p1 = Pessoa("Paitaon", 65,30)
-print(f"O nome é: {p1.nome},o peso é: {p1.peso} kg, a idade é: {p1.idade} anos")
-p1.comer("manga")
+pessoa = Pessoa("Pou", 10, 2)
+pessoa.comer("maçã")
+pessoa.dormir()
+pessoa.paradecomer()
+pessoa.dormir()
+pessoa.falar()
+pessoa.parardedormir()
+pessoa.falar()
