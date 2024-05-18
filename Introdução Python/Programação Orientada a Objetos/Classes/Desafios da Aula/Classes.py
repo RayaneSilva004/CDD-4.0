@@ -8,22 +8,22 @@ class Pessoa():
         self.falando = falando
 
     def comer(self, alimento):
-      if self.dormindo:
-        print(f"{self.nome} não pode comer enquanto está dormindo.")
-      elif self.falando:
-        print(f"{self.nome} não pode comer enquanto está falando.")
-      elif self.comendo:
-        print(f"{self.nome} já está comendo.")
-      else:    
-        print(f"{self.nome} foi comer {alimento}")    
-        self.comendo= True
+        if self.dormindo:
+          print(f"{self.nome} não pode comer enquanto está dormindo.")
+        elif self.falando:
+          print(f"{self.nome} não pode comer enquanto está falando.")
+        elif self.comendo:
+          print(f"{self.nome} já está comendo.")
+        else:    
+          print(f"{self.nome} foi comer {alimento}")    
+          self.comendo= True
 
     def pararDeComer(self):
-      if not self.comendo:
-        print(f"{self.nome} não está comendo.")
-      else:
-        print(f"{self.nome} parou de comer.")
-        self.comendo = False 
+        if not self.comendo:
+          print(f"{self.nome} não está comendo.")
+        else:
+          print(f"{self.nome} parou de comer.")
+          self.comendo = False 
 
     def dormir(self):
         if self.comendo:
@@ -36,7 +36,7 @@ class Pessoa():
           print(f"{self.nome} está dormindo")
           self.dormindo = True
 
-    def parardedormir(self):
+    def pararDeDormir(self):
         if not self.dormindo:
           print(f"{self.nome} não está dormindo")
         else:
@@ -54,9 +54,9 @@ class Pessoa():
           print(f"{self.nome} está falando")
           self.falando= True
 
-    def paradefalar(self):
+    def pararDeFalar(self):
         if not self.falando:
-          print(f"{self,nome} não está falando")
+          print(f"{self.nome} não está falando")
         else:
           print(f"{self.nome} parou de falar")
           self.falando = False
