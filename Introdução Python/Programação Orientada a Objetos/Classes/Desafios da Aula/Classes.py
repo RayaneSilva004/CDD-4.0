@@ -7,7 +7,7 @@ class Pessoa():
         self.dormindo = dormindo
         self.falando = falando
 
-  def comer(self, alimento):
+    def comer(self, alimento):
       if self.dormindo:
         print(f"{self.nome} não pode comer enquanto está dormindo.")
       elif self.falando:
