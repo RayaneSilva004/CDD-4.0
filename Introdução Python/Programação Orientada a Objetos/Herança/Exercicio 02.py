@@ -14,8 +14,3 @@ class Retangulo(Forma):
         print(f"O perimetro é {self.perimetro}")
 
 class Triangulo(Forma):
-    def __init__(self):
-        super().__init__()
-    def calcularArea(self, base, altura):
-        self.area = (base * altura)/2
-        print(f"A área do triângulo é {self.area}")
