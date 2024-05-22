@@ -8,6 +8,7 @@ class Ingresso():
 class Vip(Ingresso):
     def __init__(self,valor):
         super().__init__(valor)
+        
     def imprimirValor(self):
         ingressoVip = self.valorIngresso * 1.5
         print(f"O valor do igresso VIP é R${ingressoVip}")
