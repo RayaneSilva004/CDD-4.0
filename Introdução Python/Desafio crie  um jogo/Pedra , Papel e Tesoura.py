@@ -23,6 +23,8 @@ def jogar():
 
   if vitoriaPlayer1 > vitoriaPlayer2:
     print("Player 1 venceu a partida!")
+  if vitoriaPlayer1 == vitoriaPlayer2:
+    print("A partida terminou em empate")
   else:
     print("Player 2 venceu a partida!")
   verificar_jogar_novamente()
