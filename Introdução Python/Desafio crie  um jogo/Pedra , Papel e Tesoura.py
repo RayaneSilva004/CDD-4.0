@@ -3,7 +3,7 @@ def jogar():
   opcoes = ["pedra", "papel", "tesoura"]
   vitoriaPlayer1 = 0
   vitoriaPlayer2 = 0
-
+ """for x in range (3):"""
   while vitoriaPlayer1 <2 and vitoriaPlayer2 <2:
     escolha1 = input("Faça sua escolha player 1: \n-pedra\n-papel\n-tesoura: ").lower()
     validar_escolha(escolha1)
